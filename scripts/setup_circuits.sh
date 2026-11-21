@@ -25,7 +25,7 @@ npx snarkjs groth16 setup "$BUILD_DIR/nft_marketplace.r1cs" "$CEREMONY_DIR/pot12
 npx snarkjs zkey contribute "$BUILD_DIR/nft_marketplace_0000.zkey" "$BUILD_DIR/nft_marketplace_final.zkey" --name="Marketplace Setup" -v -e="entropy for zkey generation"
 
 echo "=== [4/5] Exporting Verification Key ==="
-npx snarkjs zkey export verification_key "$BUILD_DIR/nft_marketplace_final.zkey" "$BUILD_DIR/verification_key.json"
+npx snarkjs zkey export verificationkey "$BUILD_DIR/nft_marketplace_final.zkey" "$BUILD_DIR/verification_key.json"
 
 echo "=== [5/5] Generating Solidity Verifier Contract ==="
 npx snarkjs zkey export solidityverifier "$BUILD_DIR/nft_marketplace_final.zkey" "$ROOT_DIR/contracts/Groth16Verifier.sol"
