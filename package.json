@@ -8,9 +8,8 @@
     "setup:circuits": "bash scripts/setup_circuits.sh",
     "generate:proof": "node scripts/generate_proof.js",
     "verify:proof": "node scripts/verify_proof.js",
-    "test:circuit": "mocha test/circuit.test.js --timeout 100000",
-    "test:contracts": "npx hardhat test",
-    "test": "npx hardhat test && mocha test/circuit.test.js --timeout 100000",
+    "demo": "npx hardhat run scripts/demo_marketplace_tx.js",
+    "test": "npx hardhat test",
     "build": "npx hardhat compile"
   },
   "keywords": [
