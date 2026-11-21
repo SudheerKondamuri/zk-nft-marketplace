@@ -141,6 +141,7 @@ async function main() {
     console.log("New Buyer Balance Comm:       ", result.tradeDetails.newBuyerBalanceCommitment);
     console.log("Public Signals Count:         ", result.publicSignals.length);
     console.log("\nArtifacts saved in build/proof/: input.json, proof.json, public.json, solidityCalldata.json");
+    process.exit(0);
 }
 
 if (require.main === module) {
