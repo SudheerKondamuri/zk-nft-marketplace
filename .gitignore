@@ -1,0 +1,13 @@
+node_modules
+.env
+cache
+artifacts
+build
+*.zkey
+*.ptau
+*.r1cs
+*_js/
+test-results/
+coverage/
+typechain/
+typechain-types/
