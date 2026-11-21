@@ -120,6 +120,7 @@ async function main() {
     console.log(`- Buyer Remaining Escrow:          ${ethers.formatEther(buyerEscrowRemaining)} ETH`);
     console.log(`- Updated NFT Commitment on-chain: ${newNftComm}`);
     console.log("===============================================================================\n");
+    process.exit(0);
 }
 
 main().catch((err) => {
